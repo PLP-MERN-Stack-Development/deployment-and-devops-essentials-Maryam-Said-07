@@ -130,7 +130,7 @@ git push origin main
 ## 📖 DETAILED GUIDES
 
 **For Vercel Deployment:**
-→ Open `VERCEL_DEPLOYMENT_GUIDE.md` (just created)
+→ Open `VERCEL_DEPLOYMENT_GUIDE.md` 
 
 **For Backend Deployment:**
 → Open `DEPLOYMENT.md` section 2
