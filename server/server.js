@@ -19,7 +19,7 @@ app.use(helmet());
 // Support multiple origins: production, preview, and localhost
 const allowedOrigins = process.env.CLIENT_URL 
   ? process.env.CLIENT_URL.split(',').map(url => url.trim())
-  : ['http://localhost:3000'];
+  : ['https://task-manageri.vercel.app'];
 
 const corsOptions = {
   origin: function (origin, callback) {
