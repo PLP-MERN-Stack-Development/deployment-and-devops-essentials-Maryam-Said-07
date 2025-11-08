@@ -1,0 +1,23 @@
+# Render configuration for backend deployment
+# This file tells Render how to build and run your application
+
+# Build settings
+buildCommand: npm install
+startCommand: npm start
+
+# Environment
+envVars:
+  - key: NODE_ENV
+    value: production
+  
+# Auto-deploy from GitHub
+autoDeploy: true
+
+# Health check endpoint
+healthCheckPath: /health
+
+# Region (optional - choose closest to your users)
+# region: oregon
+
+# Instance type (optional - free tier is default)
+# plan: free
