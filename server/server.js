@@ -58,6 +58,22 @@ mongoose.connect(process.env.MONGODB_URI, {
   process.exit(1); // exit if we can't connect to database
 });
 
+// Root endpoint - welcome message
+app.get('/', (req, res) => {
+  res.json({
+    message: 'MERN Task Manager API',
+    version: '1.0.0',
+    status: 'running',
+    endpoints: {
+      health: '/health',
+      api: '/api',
+      tasks: '/api/tasks',
+      users: '/api/users'
+    },
+    documentation: 'Visit /api for API status or /health for health check'
+  });
+});
+
 // Health check endpoint - useful for monitoring services
 app.get('/health', (req, res) => {
   const healthCheck = {
@@ -75,7 +91,8 @@ app.get('/api', (req, res) => {
   res.json({ 
     message: 'MERN Deployment API',
     version: '1.0.0',
-    status: 'running'
+    status: 'running',
+    database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
   });
 });
 
