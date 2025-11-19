@@ -40,7 +40,7 @@ Value: (Leave empty - Render sets this automatically)
 ### 3. MONGODB_URI
 ```
 Key: MONGODB_URI
-Value: mongodb+srv://jbkelli:katekatie2006@jbkelli.x5aauu7.mongodb.net/mern-tasks?retryWrites=true&w=majority
+Value: mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/mern-tasks?retryWrites=true&w=majority
 ```
 
 **IMPORTANT:** Add the database name `mern-tasks` to the end!
@@ -216,8 +216,8 @@ Make sure your MongoDB Atlas is configured:
 
 2. **Database User**
    - Go to Database Access
-   - Verify user: `jbkelli` exists
-   - Password: `katekatie2006`
+   - Verify user: `YOUR_USERNAME` exists
+   - Password: `YOUR_PASSWORD`
    - Role: Read and write to any database
 
 3. **Database Name**

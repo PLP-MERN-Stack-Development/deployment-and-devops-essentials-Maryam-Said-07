@@ -83,29 +83,23 @@ router.post('/',
     try {
       const { title, description, status, priority, dueDate, tags } = req.body;
       
-      // For demo purposes, using a mock user ID
-      // In production, this would come from authentication middleware
-      const mockUserId = '507f1f77bcf86cd799439011';
-      
+      // Create task without user for demo purposes
+      // In production, add authentication middleware and use req.user.id
       const task = new Task({
         title,
         description,
         status,
         priority,
         dueDate,
-        tags,
-        user: mockUserId
+        tags
       });
       
       await task.save();
       
-      // Populate user details before sending response
-      await task.populate('user', 'username email');
-      
       res.status(201).json(task);
     } catch (error) {
       console.error('Error creating task:', error);
-      res.status(500).json({ error: 'Failed to create task' });
+      res.status(500).json({ error: 'Failed to create task', details: error.message });
     }
   }
 );

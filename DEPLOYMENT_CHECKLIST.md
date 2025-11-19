@@ -31,7 +31,7 @@
 ```env
 ✅ NODE_ENV=development
 ✅ PORT=5000
-✅ MONGODB_URI=mongodb+srv://jbkelli:...@jbkelli.x5aauu7.mongodb.net/mern-tasks
+✅ MONGODB_URI=mongodb+srv://YOUR_USERNAME:...@YOUR_CLUSTER.mongodb.net/mern-tasks
 ✅ CLIENT_URL=http://localhost:3000
 ✅ JWT_SECRET=0cd711d687f90a56a86cade743a1a69c5f0b6695d18108215d1b64c2af8ec97d
 ✅ JWT_EXPIRE=7d
@@ -81,7 +81,7 @@ npm run dev
 **Add these variables:**
 ```
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://jbkelli:katekatie2006@jbkelli.x5aauu7.mongodb.net/mern-tasks?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/mern-tasks?retryWrites=true&w=majority
 CLIENT_URL=http://localhost:3000
 JWT_SECRET=0cd711d687f90a56a86cade743a1a69c5f0b6695d18108215d1b64c2af8ec97d
 JWT_EXPIRE=7d

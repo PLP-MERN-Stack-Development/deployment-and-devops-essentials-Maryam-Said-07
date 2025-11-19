@@ -39,7 +39,7 @@ Your backend MUST have these environment variables set on Render:
 **Required Variables:**
 ```
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://jbkelli:katekatie2006@jbkelli.x5aauu7.mongodb.net/mern-tasks?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/mern-tasks?retryWrites=true&w=majority
 CLIENT_URL=http://localhost:3000
 JWT_SECRET=0cd711d687f90a56a86cade743a1a69c5f0b6695d18108215d1b64c2af8ec97d
 JWT_EXPIRE=7d
@@ -251,7 +251,7 @@ If it shows `undefined` → `.env` file not loaded → Restart dev server
 ### Check MongoDB Atlas:
 1. Go to MongoDB Atlas dashboard
 2. Network Access → Should have 0.0.0.0/0
-3. Database Access → User `jbkelli` should exist
+3. Database Access → User `YOUR_USERNAME` should exist
 4. Browse Collections → See if database `mern-tasks` exists
 
 ---
